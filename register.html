@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+		body{
+			background: url(images/home-banner.jpg) no-repeat;
+		}	
+		#wrap{
+			width: 300px;
+			height: 500px;
+			border: orangered dashed 3px;
+			margin: 0px auto;
+			position: relative;
+		}	
+	   #phone{
+	   	     width: 28px;
+	   	     height: 28px;
+	   	     position: absolute;
+	   	     left: 10px;
+	   	     top: 20px;
+ 	   }	
+ 	   #title1{
+ 	   	    font-size: 15px;
+ 	   	    color: white;
+ 	   	    position: absolute;
+ 	   	    left: 45px;
+ 	   	    top: 26px;
+ 	   }	
+ 	   #username{
+ 	   	width:270px;
+ 	   	height: 40px;
+ 	   	font-size: 18px;
+ 	   	position: absolute;
+ 	   	left: 10px;
+ 	   	top:60px ;
+ 	   }
+	#header{
+		width: 300px;
+		height: 120px;
+		/*border: 1px solid white;*/
+		margin: 30px auto;
+		position: relative;
+		left: 0px;
+		top: 20px;
+	}	
+	#header1{
+		width: 70px;
+		height: 70px;
+		position: absolute;
+		left: 115px;
+		top: 15px;
+	}
+	#zhuce{
+		font-size: 20px;
+		color: white;
+		font-weight: bold;
+		position: absolute;
+		left: 60px;
+		bottom: 0;
+	}
+	#mima{
+		 width: 28px;
+	   	  height: 28px;
+	   	  position: absolute;
+	   	  left: 10px;
+	   	  top: 110px;
+	}
+	#title2{
+		font-size: 15px;
+ 	   	    color: white;
+ 	   	    position: absolute;
+ 	   	    left: 45px;
+ 	   	    top: 115px;
+	}
+	#password{
+		width:270px;
+ 	   	height: 40px;
+ 	   	font-size: 18px;
+ 	   	position: absolute;
+ 	   	left: 10px;
+ 	   	top:145px ;
+	}
+	#rentou2{
+		 width: 25px;
+	   	  height: 25px;
+	   	  position: absolute;
+	   	  left: 10px;
+	   	  top: 196px;
+	}
+	#title4{
+		font-size: 15px;
+ 	   	    color: white;
+ 	   	    position: absolute;
+ 	   	    left: 45px;
+ 	   	    top: 203px;
+	}
+	#truename{
+		width:270px;
+ 	   	height: 40px;
+ 	   	font-size: 18px;
+ 	   	position: absolute;
+ 	   	left: 10px;
+ 	   	top:230px ;
+	}
+	#rentou1{
+		width: 25px;
+	   	  height: 25px;
+	   	  position: absolute;
+	   	  left: 10px;
+	   	  top: 280px;
+	}
+	#title3{
+		font-size: 15px;
+ 	   	    color: white;
+ 	   	    position: absolute;
+ 	   	    left: 45px;
+ 	   	    top: 286px;
+	}
+	#nan{
+		position: absolute;
+		left: 90px;
+		top: 290px;
+	}
+	#sex1{
+		font-size: 17px;
+		color: white;
+       position: absolute;
+       left: 108px ;
+       top:284px ;
+	}
+	#nv{
+		position: absolute;
+		left: 148px;
+		top: 290px;
+	}
+	#sex2{
+		font-size: 17px;
+		color: white;
+       position: absolute;
+       left: 166px ;
+       top:284px ;
+	}
+	#register{
+		cursor: pointer;
+		width: 150px;
+		height: 45px;
+		background-color: orangered;
+		border: 1px solid white;
+		border-radius: 6px;
+		outline: none;
+		font-size: 25px;
+		color: white;
+		position: absolute;
+		left:75px;
+		top: 350px;
+	}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<img src="images/logo.png" id="header1"/>
+			<span id="zhuce">
+				超人健身--用户注册
+			</span>
+			
+			
+		</div>
+		<div id="wrap">
+			
+				<img src="images/shouji.png" id="phone"/>
+				<span id="title1">
+					手机号
+				</span>
+			
+			<input type="text" name="username" id="username" placeholder="用户名" />
+			<img src="images/mima.png" id="mima"/>
+			<span id="title2">
+				密码
+			</span>
+			<input type="password" name="password" id="password" placeholder="密码" />
+			<img src="images/huiserentou.png" id="rentou1"/>
+			<span id="title3">
+				性别:
+			</span>
+			<input type="checkbox" name="nan" id="nan" value="男" /><span id="sex1">
+				男
+			</span>
+			<input type="checkbox" name="nv" id="nv" value="女" /> <span id="sex2">
+				女
+			</span>
+			<img src="images/huiserentou.png" id="rentou2"/>
+			<span id="title4">
+				真实姓名
+			</span>
+			<input type="text" name="truename" id="truename" placeholder="真实姓名" />
+			<input type="submit" name="register" id="register" value="完成注册" />
+			
+			
+			
+		</div>
+		
+	</body>
+	<script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	var nan = document.getElementById("nan");
+	var nv = document.getElementById("nv");
+	var  reg1 = /^1[3456789]\d{9}$/;
+	var  reg2 = /^[a-zA-z][\w\.]{5,17}$/;
+	$("#username").change(function(){
+		var usertest = reg1.test($("#username").val());
+		
+		if(!usertest){
+			alert("请输入正确的手机号格式!");
+		}
+		
+	});
+	$("#password").change(function(){
+		var pwtest = reg2.test($("#password").val());
+		if(!pwtest){
+			alert("请输入6-18位并以字母开头的密码格式!");
+		}
+	});
+	
+	$.ajax({
+		type:"get",
+		url:"http://localhost:8660/zhuce",
+		async:true,
+		success:function(data){
+			$("#register").click(function(){
+       		var userindex = data.userData.indexOf($("#username").val());
+      
+       if(userindex == -1){
+       			$.ajax({
+       				type:"get",
+       				url:"http://localhost:8660/add",
+       				data:{
+       					user:$("#username").val(),
+       					password:$("#password").val(),
+       					name:$("#truename").val(),
+       					sex:nan.checked = true ? nan.value:nv.value
+       				},
+       				async:true,
+       			success:function(dataobj) {
+					console.log(dataobj);
+					if (dataobj.msg == 1) {
+						alert("注册成功!");
+						
+						location.href = "login.html";
+
+					}
+				}
+       			
+       			});
+       			
+       		}
+       		 else{
+       		 	alert("账号已存在!");
+       		 	
+       		 }
+       		 
+       			
+       		});
+		}
+		
+	});	
+		
+		
+	</script>
+	
+	
+</html>
